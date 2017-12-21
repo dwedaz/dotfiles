@@ -30,6 +30,8 @@
 
 	nnoremap <Space> za
 	nnoremap <leader>z zMzvzz
+	map <leader>b :!php %<CR>
+	map <leader>rv  :source ~/.vimrc<CR>
 
 	nnoremap vv 0v$
 
