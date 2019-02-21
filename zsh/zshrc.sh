@@ -12,8 +12,13 @@
 
 # Settings
 	export VISUAL=vim
-
+	export GOPATH="$HOME/go"
+export PATH="$PATH:$HOME/.burrow/bin"
+export PATH="$PATH:$HOME/.composer/vendor/bin"
 source ~/dotfiles/zsh/plugins/fixls.zsh
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/php@7.1.2/bin:$PATH"
+export PATH="$GOPATH/bin$PATH"
 
 #Functions
 	# Custom cd
@@ -50,3 +55,11 @@ fi
 
 source ~/dotfiles/zsh/prompt.sh
 source ~/dotfiles/zsh/zshrc_alias.sh
+
+if [[ "$TERMINOLOGY" -eq "1" ]]; then
+	    pokemon
+fi
+export EDITOR='vim'
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
